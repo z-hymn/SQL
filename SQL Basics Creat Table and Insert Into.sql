@@ -1,4 +1,4 @@
--- Drop the PETRESCUE table in case it exists
+-- Dropped the PETRESCUE table in case it exists
 drop table PETRESCUE;
 -- Create the PETRESCUE table 
 create table PETRESCUE (
@@ -9,7 +9,7 @@ create table PETRESCUE (
 	RESCUEDATE DATE,
 	PRIMARY KEY (ID)
 	);
--- Insert sample data into PETRESCUE table
+-- Insert 
 insert into PETRESCUE values 
 	(1,'Cat',9,450.09,'2018-05-29'),
 	(2,'Dog',3,666.66,'2018-06-01'),
