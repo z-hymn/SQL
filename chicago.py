@@ -16,7 +16,7 @@
 # The total number of crimes 
 %sql select count(*) as total_number_of_crimes from chicago_crime_data
 
-Community areas with per capita income less than $11,000
+# Community areas with per capita income less than $11,000
 %sql SELECT community_area_name, per_capita_income FROM census_data 
 WHERE per_capita_income < 11000 ORDER BY per_capita_income DESC 
 
