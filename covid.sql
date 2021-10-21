@@ -38,7 +38,7 @@ select Location, MAX(cast(Total_deaths as Int)) as TotalDeathCount
 from CovidDeaths;
 -- Where location like '%states%'
 Group by Location,
-order by PercentPopulationInfected desc 
+order by TotalDeathCount desc 
 
 --Break things down by continet -- highest death count per population 
 
@@ -47,4 +47,4 @@ from CovidDeaths;
 -- Where location like '%states%'
 where continent Is null 
 Group by Location,
-order by PercentPopulationInfected desc 
+order by TotalDeathCount desc 
